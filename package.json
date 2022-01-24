@@ -18,6 +18,7 @@
     "build-plugin-antd": "^0.1.2",
     "build-plugin-ignore-style": "^0.1.0",
     "eslint": "^7.30.0",
+    "husky": "^7.0.4",
     "ice.js": "^2.0.0",
     "stylelint": "^13.1.0"
   },
@@ -26,7 +27,8 @@
     "build": "icejs build",
     "lint": "npm run eslint && npm run stylelint",
     "eslint": "eslint --cache --ext .js,.jsx ./",
-    "stylelint": "stylelint ./**/*.scss"
+    "stylelint": "stylelint ./**/*.css",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
